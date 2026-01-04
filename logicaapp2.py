@@ -2,35 +2,33 @@ import streamlit as st
 import pandas as pd
 import os
 
-# --- 1. CONFIGURAÇÃO DA PÁGINA (Deve ser sempre a primeira linha de comando Streamlit) ---
+
 st.set_page_config(page_title="Gestão Comercial", layout="wide")
 st.title("📊 Sistema de Gestão Integrado")
 
-# --- 2. CONFIGURAÇÃO DE ARQUIVOS ---
+
 ARQUIVO_STOCK = 'stock.csv'
 ARQUIVO_VENDAS = 'vendas.csv'
 ARQUIVO_CLIENTES = 'clientes.csv'
 
-# --- 3. FUNÇÕES UTILITÁRIAS (O Cérebro) ---
+
 def carregar_dados(arquivo, colunas_padrao):
     if os.path.exists(arquivo):
         return pd.read_csv(arquivo)
     return pd.DataFrame(columns=colunas_padrao)
 
-# --- 4. MENU LATERAL ---
+
 menu = st.sidebar.selectbox("Navegar", 
     ["Gestão de Stock", "Registrar Venda", "Clientes", "Calculadora"])
 
-# ==================================================
-# BLOCO 1: GESTÃO DE STOCK
-# ==================================================
+
+
 if menu == "Gestão de Stock":
     st.header("📦 Inventário")
     
-    # Carregar dados
     df_stock = carregar_dados(ARQUIVO_STOCK, ['Produto', 'Quantidade', 'Preco'])
     
-    # Inputs (Substitui o 'input' do terminal)
+    
     c1, c2, c3 = st.columns(3)
     prod = c1.text_input("Produto")
     qtd = c2.number_input("Qtd", min_value=1, step=1)
@@ -158,3 +156,4 @@ elif menu == "Calculadora":
     c1.metric("Preço de Venda", f"{preco_venda:.2f} €")
 
     c2.metric("Lucro Previsto", f"{lucro:.2f} €", delta="Lucro")
+
