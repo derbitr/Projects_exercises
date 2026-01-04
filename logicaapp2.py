@@ -19,7 +19,7 @@ def carregar_dados(arquivo, colunas_padrao):
 
 # --- 4. MENU LATERAL ---
 menu = st.sidebar.selectbox("Navegar", 
-    ["Gestão de Stock", "Registar Venda", "Clientes", "Calculadora"])
+    ["Gestão de Stock", "Registrar Venda", "Clientes", "Calculadora"])
 
 # ==================================================
 # BLOCO 1: GESTÃO DE STOCK
@@ -52,7 +52,7 @@ if menu == "Gestão de Stock":
 # ==================================================
 # BLOCO 2: VENDAS (Com Dashboard Corrigido)
 # ==================================================
-elif menu == "Registar Venda":
+elif menu == "Registrar Venda":
     st.header("🛒 Caixa Registadora")
     
     df_stock = carregar_dados(ARQUIVO_STOCK, ['Produto', 'Quantidade', 'Preco'])
@@ -156,4 +156,5 @@ elif menu == "Calculadora":
     
     c1, c2 = st.columns(2)
     c1.metric("Preço de Venda", f"{preco_venda:.2f} €")
+
     c2.metric("Lucro Previsto", f"{lucro:.2f} €", delta="Lucro")
