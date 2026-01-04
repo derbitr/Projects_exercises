@@ -1,2 +1,2 @@
-# Projects_exercises
-Finished projects for my study schedule 
+# Projects_exercises1
+I'm studying Python and SQL languages in my first steps into coding. This is my first project, but for my lacking in knowledge i fill this lack with external help, im created a entire system of commerce using python and the libs ( pandas, os and streamlit) i managed to create the backend making integration with the calculator and the data base with the OS lib, after i sucessed in backend logic, i'm harstucked into frontend development, even i was being helped because i dont have the necessary knowledge for use the STREAMLIT lib , but i finnaly finished the project and i was very happy for readed every single code ( even those i was helped ) and can speak and understand every single one, i hopefull this first project will give me determination for be better in coding and the next one projects without external help.
