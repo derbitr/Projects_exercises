@@ -47,16 +47,14 @@ if menu == "Gestão de Stock":
         
     st.dataframe(df_stock, use_container_width=True)
 
-# ==================================================
-# BLOCO 2: VENDAS (Com Dashboard Corrigido)
-# ==================================================
+
 elif menu == "Registrar Venda":
     st.header("🛒 Caixa Registadora")
     
     df_stock = carregar_dados(ARQUIVO_STOCK, ['Produto', 'Quantidade', 'Preco'])
     df_vendas = carregar_dados(ARQUIVO_VENDAS, ['Produto', 'Qtd_Venda', 'Total', 'Data'])
     
-    # --- DASHBOARD (Correção: Faltava mostrar os números) ---
+   
     if not df_vendas.empty:
         total_ganho = df_vendas['Total'].sum()
         total_qtd = df_vendas['Qtd_Venda'].sum()
@@ -65,16 +63,16 @@ elif menu == "Registrar Venda":
         m1.metric("Receita Total", f"{total_ganho:.2f} €")
         m2.metric("Produtos Vendidos", f"{total_qtd:.0f}")
         st.divider()
-    # -------------------------------------------------------
+  
 
     if df_stock.empty:
         st.warning("O stock está vazio. Adiciona produtos primeiro!")
     else:
-        # Seleção do produto
+       
         lista_produtos = df_stock['Produto'].unique()
         produto_selecionado = st.selectbox("Escolha o Produto", lista_produtos)
         
-        # Procura automática de preço (Lógica de Integração)
+     
         filtro_linha = df_stock[df_stock['Produto'] == produto_selecionado]
         preco_unitario = filtro_linha['Preco'].values[0]
 
@@ -101,9 +99,7 @@ elif menu == "Registrar Venda":
     st.subheader("Histórico de Vendas")
     st.dataframe(df_vendas, use_container_width=True)
 
-# ==================================================
-# BLOCO 3: CLIENTES
-# ==================================================
+
 elif menu == "Clientes":
     st.header("👥 Carteira de Clientes")
     
@@ -133,12 +129,10 @@ elif menu == "Clientes":
                 
     st.dataframe(df_clientes, use_container_width=True)
 
-# ==================================================
-# BLOCO 4: CALCULADORA
-# ==================================================
+
 elif menu == "Calculadora":
     st.header("🧮 Simulação de Preços")
-    # Aqui integramos a tua primeira função 'def calculadora()', mas visualmente
+   
     
     col1, col2 = st.columns(2)
     with col1:
@@ -148,7 +142,7 @@ elif menu == "Calculadora":
     
     st.divider()
     
-    # A tua lógica matemática original:
+  
     preco_venda = custo * (1 + (margem / 100))
     lucro = preco_venda - custo
     
@@ -156,4 +150,5 @@ elif menu == "Calculadora":
     c1.metric("Preço de Venda", f"{preco_venda:.2f} €")
 
     c2.metric("Lucro Previsto", f"{lucro:.2f} €", delta="Lucro")
+
 
