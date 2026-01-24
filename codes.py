@@ -150,3 +150,4 @@ elif menu == "Calculadora":
     c1.metric("Preço de Venda", f"{preco_venda:.2f} €")
 
     c2.metric("Lucro Previsto", f"{lucro:.2f} €", delta="Lucro")
+
