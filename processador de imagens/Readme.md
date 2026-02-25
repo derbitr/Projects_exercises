@@ -1,0 +1,1 @@
+For my study project schedule i created an image processor with python (PIL and PATHLIB), select one origin paste ( in terminal ) and select another paste for destiny ( in terminal too), then he take jpg, png and jpeg images and transform into "L" (Black/White image) with a pre - defined scale s
