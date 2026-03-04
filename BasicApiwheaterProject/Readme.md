@@ -1,1 +1,0 @@
-Created an wheater interface using the openwheaterapp API for my schedule study, i selected a personal city and i get in the print the selected city and the future 5 days TEMP with a mean calc too
