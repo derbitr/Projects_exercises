@@ -1,0 +1,1 @@
+Created a project about a email validator bot using functions, standard libraries with a basic refatoraction and a simple devops like register logs
