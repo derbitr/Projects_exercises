@@ -1,0 +1,12 @@
+.env
+Clientes.xlsx
+*.xlsx
+*.csv
+logs.txt
+relatorio_*.jpg
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+env/
