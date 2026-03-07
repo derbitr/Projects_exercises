@@ -1,6 +1,6 @@
-import requests; import os; import dotenv; from dotenv import load_dotenv;import logging
+import requests; import os; import dotenv; from dotenv import load_dotenv;import logging; 
 
-load_dotenv()
+dotenv.load_dotenv()
 def obter_dados(cidade : str) ->tuple:
     if not cidade or not cidade.strip():
         logging.error("Nome de cidade invalido")
