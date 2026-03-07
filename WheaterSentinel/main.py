@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
 import picture_studio; import wheaterextractor; import pandas, smtplib,logging,os; from email.message import EmailMessage; 
-
 load_dotenv()
 def configuraçao():
     logging.basicConfig(
