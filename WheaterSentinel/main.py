@@ -1,23 +1,23 @@
 from dotenv import load_dotenv
 import picture_studio; import wheaterextractor; import pandas, smtplib,logging,os; from email.message import EmailMessage; 
 load_dotenv()
-def configuraçao():
+def configuraçao():        #Configurar a pasta de registros
     logging.basicConfig(
         filename='logs.txt',
-        level = logging.INFO,
-        format="%(asctime)s\n%(levelname)s\n%(message)s"
+        level = logging.INFO,  
+        format="%(asctime)s\n%(levelname)s\n%(message)s"            
     )
-def mensagens(remetente, email_cliente,aviso):
+def mensagens(remetente, email_cliente,aviso): #Função auxiliar para o sistema de mensagens
     mensagem = EmailMessage()
     mensagem['Subject'] = "Detalhes sobre o clima"
     mensagem['From'] = remetente
     mensagem['To'] = email_cliente
     mensagem.set_content(f"Informaçao sobre o clima : {aviso}")
     return mensagem
-def emails():
+def emails(): #Puxar os dados pessoais para realizar as mensagens
     email = os.getenv("MEU_EMAIL")
     senha = os.getenv("SENHA_APP")
-    if not email or not senha:
+    if not email or not senha: #Série de tentativas e erros para proteção do código
         logging.error("Email ou senha nao encontrados")
         return
     try:
