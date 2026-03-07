@@ -1,0 +1,1 @@
+After created 3 projects for my practice, i wanted to unify they in one project, created a extractor script, he take the weather from api, transform into a message email, custom the messagem email with librarie PIL, then i send to respective email that message contain the city and the current temperature in Celcius metric.
