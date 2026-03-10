@@ -1,0 +1,1 @@
+Created a bot scrapper using the beatifulsoup librarie, tried to optimize the 3 parts of my codes using try/except and condicionals with the logging librarie and in the main code i used the csv librarie for save the data of the script in excel.
