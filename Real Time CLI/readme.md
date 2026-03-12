@@ -1,0 +1,1 @@
+Created a real time cli using awesome api for catch the values from 3 differents coins and i made a simple system conversion with real time system, i split the codes in 3 differentes files to learn about separate things for security crashes.
