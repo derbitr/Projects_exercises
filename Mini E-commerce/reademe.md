@@ -1,0 +1,1 @@
+Created a project using my last 3 mini projects for learning concepts about scrapper, api and automatization for auto insert in a Excel file, EPl. 
