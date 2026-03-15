@@ -1,0 +1,1 @@
+Created an ETL using the async librarie for catch simultaneos task in the selected links, i made 3 separated python files with the main being the principal for run the code, with logging, asyncio and aiohttp librarie i created an ETL for my training skill in automatization. 
