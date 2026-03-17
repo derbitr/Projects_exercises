@@ -1,0 +1,1 @@
+Created again an ETL but now with sqlite database with a public sheet file in kaggles, used again the logging librarie, but now with pandas for catch the sheets and transform in databasesss
