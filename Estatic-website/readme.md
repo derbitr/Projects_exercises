@@ -1,0 +1,1 @@
+This time i wanted to learn some frontend concepts because i never touched in one, i used the jinga librarie with logging for create a script for catch lists and return the result in a little website.html 
