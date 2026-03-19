@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset = "UTF-8">
+    <title>{{ titulo }} </title>
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif; margin: 50px;
+        background-color: antiquewhite;}
+        h1 {color: black;}
+        .card {background: white; padding: 25px;
+        border-collapse: collapse; margin-top: 25px;}
+        th,td {padding: 15px; border-bottom: 1.5px solid blanchedalmond; text-align:left ;}
+        th {background-color: lightgrey; color: lightcyan;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ titulo }}</h1>
+        <div class="resumo-card">
+            <h2> Faturamento Total</h2>
+            <p class="valor"> R$ {{faturamento_total}}</p>
+        </div>
+        <h3> Top produtos</h3>
+        <table>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade Vendida</th>
+                <th>Receita gerada</th>
+            </tr>
+            {% for item in top_produtos %}
+            <tr>
+                <td> {{item.nome}}</td>
+                <td> {{item.quantidade}}</td>
+                <td> {{item.receita}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
