@@ -1,0 +1,1 @@
+This time i wanted to learn about another os concepts with watchdog, i made a entire full-time script for read all my documents inside from my windows directory, clean and move to another paste from my computer, it was hard for read the documentation and do the OOP things, but it handed well
