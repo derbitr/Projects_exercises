@@ -1,0 +1,1 @@
+i created an automatic robot processor (RPA), the user just take the file of the data in (.txt) format to a paste. The system look at the paste in an invisible way using the DAEMON librarie, process instantly the data with pandas, do a Dual Write(save in a local DataBank and give to a API in cloud) and generate an exclusive excel file in the press of one button
