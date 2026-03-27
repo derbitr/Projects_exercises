@@ -1,0 +1,17 @@
+{
+    "1": {
+        "Pergunta": "Qual é o maior time do mundo nos ideais de derby?",
+        "Opções": ["A) MIBR", "B) FURIA", "C) FLAMENGO"],
+        "Resposta correta": "C"
+    },
+    "2": {
+        "Pergunta": "Qual o tipo de treino que o derby faz na academia",
+        "Opções": ["A) ABCD", "B) ARNOLD","C) UPPER/LOWER"],
+        "Resposta correta": "C"
+    },
+    "3" : {
+        "Pergunta": "Qual carro o derby quer rebaixar?",
+        "Opções": ["A) Vectra motor 2.2","B) Gol","C) Santana"],
+        "Resposta correta": "A"
+    }
+}
