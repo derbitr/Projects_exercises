@@ -33,7 +33,7 @@ if __name__ == "__main__":
     simular_progresso = {"pergunta": "2", "pontuacao" : 10}
     salvar_progresso(simular_progresso)
     estado_salvo = carregar_progresso()
-    print("Estado do do jogo:", estado_salvo)
+    print("Estado do jogo:", estado_salvo)
     resultado = carregar_perguntas()
     if resultado:
         print(resultado)
