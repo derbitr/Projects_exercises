@@ -29,3 +29,31 @@ How to Run:
 3. Execute the script:
     Bash
     python main.py
+
+
+Em português:
+Sistema de Mini E-Market em Python (CLI)
+
+Este é um aplicativo funcional de linha de comando que simula a experiência completa de um e-commerce. O foco principal foi o desenvolvimento de uma lógica robusta para gerenciamento de carrinho e regras de checkout.
+
+
+*Seleção Dinâmica de Produtos:*Interface interativa para navegar pelo catálogo e adicionar itens.
+*Gerenciamento de Carrinho:* Lógica para controle de quantidades e acumulação de valores.
+**Motor de Descontos:* Implementação automática de regras de negócio (descontos para pagamento à vista vs. parcelado).
+*Extrato de Checkout:* Geração de um resumo detalhado da compra com totais e economias aplicadas.
+ 
+Competências Técnicas Demonstradas
+*Estruturas de Dados:* Uso eficiente de listas e dicionários para catálogo e estoque.
+*Fluxo de Controle:* Implementação de loops e condicionais para uma experiência de usuário sem erros.
+*Validação de Inputs:* Tratamento de entradas para garantir a estabilidade do sistema durante a compra.
+
+Como Executar:
+1. Clone o repositório.
+    ```bash
+   git clone [https://github.com/derbitr/Projects_exercises.git](https://github.com/derbitr/Projects_exercises.git)
+2. Navegue até a pasta `Mini_E_commerce`:
+    bash 
+    cd "Mini_E_commecer
+3. Execute o comando: `python main.py':
+    Bash
+    python main.pyu
