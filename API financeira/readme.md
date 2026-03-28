@@ -1,0 +1,1 @@
+I created an advanced concept about arquiteture design, did a Cliente-server system, is a quiz game with api in backend, i run the quiz in terminal with a client game, made a json file for storage the questions with O(1) search, i use requests for get the url address and for memory cache storage with data save.

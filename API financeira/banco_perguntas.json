@@ -1,0 +1,52 @@
+{
+    "1": {
+        "pergunta": "O que e a Inflacao num cenario economico?",
+        "opcoes": [
+            "A) O aumento do valor da moeda local",
+            "B) A perda do poder de compra devido ao aumento generalizado dos precos",
+            "C) Uma taxa cobrada pelos bancos em emprestimos",
+            "D) O lucro obtido ao investir na bolsa de valores"
+        ],
+        "resposta_correta": "B"
+    },
+    "2": {
+        "pergunta": "No mundo dos investimentos, o que significa 'Diversificacao'?",
+        "opcoes": [
+            "A) Colocar todo o dinheiro na acao que mais rende",
+            "B) Investir apenas em Renda Fixa para nao ter riscos",
+            "C) Distribuir o dinheiro em diferentes tipos de ativos para diluir o risco",
+            "D) Comprar dolares e guarda-los num cofre fisico"
+        ],
+        "resposta_correta": "C"
+    },
+    "3": {
+        "pergunta": "O que e a 'Reserva de Emergencia'?",
+        "opcoes": [
+            "A) Um dinheiro guardado com alta liquidez para imprevistos financeiros",
+            "B) Um limite de credito pre-aprovado no cartao",
+            "C) O dinheiro usado para viagens de ferias",
+            "D) Uma acao de alto risco na Bolsa de Valores"
+        ],
+        "resposta_correta": "A"
+    },
+    "4": {
+        "pergunta": "Qual e a principal diferenca entre Renda Fixa e Renda Variavel?",
+        "opcoes": [
+            "A) A Renda Variavel e garantida pelo Governo",
+            "B) Na Renda Fixa, voce sabe ou tem uma previsibilidade de como o rendimento sera calculado desde o inicio",
+            "C) A Renda Fixa sempre da prejuizo a longo prazo",
+            "D) Nao existe diferenca, ambas pagam o mesmo imposto"
+        ],
+        "resposta_correta": "B"
+    },
+    "5": {
+        "pergunta": "O que Albert Einstein supostamente chamou de 'a oitava maravilha do mundo' nas financas?",
+        "opcoes": [
+            "A) O Ouro",
+            "B) O Bitcoin",
+            "C) Os Juros Compostos",
+            "D) O Banco Central"
+        ],
+        "resposta_correta": "C"
+    }
+}
