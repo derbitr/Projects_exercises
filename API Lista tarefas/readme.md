@@ -1,0 +1,1 @@
+I created a sided project for learning concepts about api, files modules and the ORM use from save data, i use pydantic for data validation, router with fastapi, conexion and databank with sqlalchemy with sqlite and a main file for run all of these files for security run
