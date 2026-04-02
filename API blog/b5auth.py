@@ -31,6 +31,6 @@ async def verificar_login(dados_autenticados: OAuth2PasswordRequestForm = Depend
     else:
         senha = b4jwt.verificar_hash(dados_autenticados.password,usuario.senha_hash)
     if senha == False:
-        raise HTTPException(401,detail="Credenciais invalidas")
+        raise HTTPException(status_code=401,detail="Credenciais invalidas")
     sub = b4jwt.criar_token_senha({"sub" : usuario.email})
     return {"access_token" : sub, "token_type" : "bearer"}
