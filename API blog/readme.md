@@ -2,7 +2,7 @@ I created an API blog with auth for learn about API and autentication concepts s
 
 b1database = Created for sqlite configuration with sqlalchemy librarie, he create the databank and start the data engine
 
-b2modelos = Created a physic structure for the databank using sqlalchemy with 2 classes, User and Post, the class User create the username, an variable for putting the email in unique mode (emailstr) and the password hash for list users, by the way, the class Post is to create the publicatins variables with n+1 relationship, he have a foreign key inside in a variable to link each Post for user.
+b2modelos = Created a physic structure for the databank using sqlalchemy with 2 classes, User and Post, the class User create the username, an variable for putting the email in unique mode (emailstr) and the password hash for list users, by the way, the class Post is to create the publications variables with n+1 relationship, he have a foreign key inside in a variable to link each Post for user.
 
 b3listasegura = Is the main file for data validation who enter and quit from the API
 
