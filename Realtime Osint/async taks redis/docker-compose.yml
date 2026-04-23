@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  redis:
+  imagem: redis:alpine
+  ports:
+    - "6379:6379"
+
+  api:
+    build: .
+    commnad: uvicorn x6main:app --host 0.0.0.0 --port 8009
+    ports:
+      - "8009:8009"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+  worker:
+    build: . 
+    command: python x3motor.py
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      
