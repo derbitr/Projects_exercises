@@ -38,7 +38,7 @@ def inserir_dados(dados):
 def contar_dias(ano : int = 10):
     try:
         ano_limite = datetime.now().year - ano
-        logging.info("Filtro de dias realizado")
+        logging.info("Filtro de ano realizado")
         conexao = banco()
         if conexao:
             logging.info("Banco conectado")
