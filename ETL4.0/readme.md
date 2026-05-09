@@ -1,0 +1,1 @@
+ETL criado para fixação de conceitos utilizando banco de dados, pydantic para filtrar dados específicos e lógica para transformação de dados
