@@ -1,0 +1,1 @@
+Just try to create a mini project f4fun for learn concepts through the python doc (sunday night)
