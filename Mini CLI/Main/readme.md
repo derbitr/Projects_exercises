@@ -1,4 +1,4 @@
-Cli própria criada para aprendizado de conceitos de testes de extração de dados com interface interativa via terminal (vscode,bash,cmd).
+Cli própria criada para aprendizado de conceitos de testes de extração de dados com interface interativa via terminal (vscode ou bash).
 
 Guia:
 
