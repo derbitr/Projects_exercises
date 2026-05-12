@@ -13,9 +13,10 @@ def config():
 def capturar_dados(ticker,periodo="1mo"):
     try:
         dados = yfinance.download(tickers=ticker,period=periodo)
-        dados.reset_index(inplace=True)
         if dados.empty:
             return []
+        dados.columns = dados.columns.get_level_values(0)
+        dados.reset_index(inplace=True)
         try:
             lista_tuplas = []
             for item in dados.itertuples():
