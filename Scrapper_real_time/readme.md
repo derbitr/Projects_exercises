@@ -10,7 +10,7 @@ Sistema simples que faz web scraping em background sem travamento de telas, reto
 
 *Redis*: Banco de memória para gerenciamento de fila
 
-*HTTPS + BeautifulSoup*: Ferramentas de extração de dados
+*HTTPX + BeautifulSoup*: Ferramentas de extração de dados
 
 *Docker + Docker Compose*: Infraestrutura de contêineres
 
