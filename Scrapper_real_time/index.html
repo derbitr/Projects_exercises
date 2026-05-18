@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang ="pt-BR"
+<head>
+    <meta charset="utf-8">
+    <title>Teste walkier-talkie</title>
+</head>
+<body>
+    <h1>Radio (Websocket)</h1>
+    <input type="text" id="caixaTexto" placeholder="Escreva aqui:" autocomplete="off"/>
+    <button onclick="enviarMensagem()">Transmitir</button>
+    <ul id="mensagens"></ul>
+
+    <script>
+        var ws = new WebSocket ("ws://127.0.0.1:8700/Websocket/ws/");
+        ws.onmessage = function(event) {
+            var lista = document.getElementById("mensagens");
+            var item = document.createElement("li");
+            item.appendChild(document.createTextNode(event.data));
+            lista.appendChild(item);
+        };
+        function enviarMensagem() {
+            var input = document.getElementById("caixaTexto");
+            ws.send(input.value);
+            input.value="";
+        }
+    </script>
+</body>
+</html>

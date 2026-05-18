@@ -1,0 +1,31 @@
+version: '3.8'
+
+
+services:
+  redis:
+  image: redis:7-alpine
+  container_name: scraper_redis
+  ports:
+    - "6379:6379"
+  restart: always
+
+  api:
+    build: .
+    container_name: "scraper_api"
+    ports:
+      - "8700:8700"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+    restart: always
+  
+  worker:
+    build: .
+    container_name: scraper_worker
+    command: celery -A worker.celery_app worker --loglevel=info
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+    restart: always
