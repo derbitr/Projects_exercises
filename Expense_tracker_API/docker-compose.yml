@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  api_despesas:
+    container_name: expense_tracker_api
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8005:8005"
+    env_file:
+    - .env
+    restart: unless-stopped  
