@@ -1,4 +1,4 @@
-Projeto envolvendo a montagem de uma API para gerenciamento de despesas, com uso de validaçao de dados **Pydantic**, criptofrafia de senhas com **bcrypt** e autenticação com **OAuth2 e JWT**.
+Projeto envolvendo a montagem de uma API para gerenciamento de despesas, com uso de validaçao de dados **Pydantic**, criptografia de senhas com **bcrypt** e autenticação com **OAuth2 e JWT**.
 
 O projeto adota arquitetura e modularização dividida responsavelmente para facilitar a manutenção, testabilidade e escalabilidade.
 
